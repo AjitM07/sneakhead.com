@@ -1,4 +1,58 @@
-
+*{
+  scroll-behavior: smooth;
+}
+.yourcart{
+  margin-top: 3rem;
+}
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+.product {
+  background: #000000;
+  padding: 1rem;
+  border-radius: 20px;
+  text-align: center;
+  transition: 0.3s ease-in-out;
+  margin-bottom: 3rem;
+  
+}
+.product:hover {
+  transform: scale(1.08);
+  border: 3px solid #ae1414;
+  filter: drop-shadow(2px 4px 8px #ae1414);
+}
+.product img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 15px;
+  border: 2px solid #ffffff;
+  
+}
+.product h3 {
+  margin: 0.5rem 0;
+  color:#ffffff;
+}
+.product p {
+  color: #ffffff;
+}
+.product button {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  padding: 0.5rem 1rem;
+  background: #ffffff;
+  color: rgb(42, 42, 42);
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: background 0.3s;
+}
+.product button:hover {
+  background: #ae1414;
+  color:white;
+}
 .remove-btn {
       background:#ffffff;
       padding: 5px 10px;
@@ -182,24 +236,47 @@ footer {
   margin-top: 1rem;
 }
 
+
 @media(max-width:426px){
-  #sidebarToggle {
-  visibility: visible;
+  .product-grid {
+  display:grid;
+  gap: 1rem;
   }
-  .toggle{
-  margin-bottom: 3rem;
-  }
-  .summarypopup, .buypopup{
-  width:200px;
-  font-size: 1rem;
-  }
-  .followus{
-    font-size: 0.9rem;
+  .product {
+  flex: 1 1 250px;
+  min-width: 250px;
   }
   #cart-items{
     justify-self: center;
   }
+  footer{
+    font-size: 0.5rem;
+  }
+  header{
+    display: none;
+  }
+  .buypopup, .summarypopup{
+    width:200px;
+    font-size: 1rem;
+  }
+  .buypopup .btn{
+    margin-top: 20px;
+  }
+  #sidebarToggle {
+  visibility: visible;
+  }
+.footer-container {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .social-icons a i{
+   font-size: 20px;
+  }
+  .followus{
+    font-size: 0.9rem;
+  }
 }
+
 @media(max-width:770px){
   .nav-links a{
     font-size: 0.9rem;
@@ -209,9 +286,6 @@ footer {
   }
   .followus{
     font-size: 1rem;
-  }
-   #cart-items{
-    justify-self: center;
   }
 }
 
