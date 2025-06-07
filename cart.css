@@ -1,0 +1,221 @@
+
+.remove-btn {
+      background:#ffffff;
+      padding: 5px 10px;
+      cursor: pointer;
+      margin-left:2rem;
+      margin-right:0rem;
+    }
+
+    .remove-btn:hover {
+      background: #ae1414;
+      border: 2px solid #ffffff;
+
+    }
+    .logo{
+      margin-left:6.5rem;
+    }
+    .action-buttons {
+      display: flex;
+      align-items: center;
+      margin-top: 10px;
+    }
+
+    .buy-checkbox {
+      transform: scale(3);
+      margin-left:3.2rem;
+      cursor: pointer;
+      accent-color: #ae1414;
+    }
+
+    .back-button {
+      padding-left: 0.8rem;
+      border-radius: 10%;
+      font-size: 1.2rem;
+      padding-right: 1rem;
+      color: #ffffff;
+    }
+
+    .back-button:hover {
+      background: #ae1414;
+      color:#ffffff;
+      border: 2px solid #ffffff;
+    }
+
+    .header-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .buybtn{
+       text-align: center;
+       margin:auto;
+    }
+    .buy-button{
+      margin-top: 2rem;
+      padding:1.2rem;
+      border: 2px solid #ffffff;
+      background: #ffffff;
+      border-radius: 30px;
+      font-size: 1.2rem;
+      transition: 0.3s ease-in-out;
+    }
+    .buy-button:hover{
+      background: #ae1414;
+      cursor:pointer;
+      color:#ffffff;
+    }
+    .buypopup{
+        width:400px;
+        background-color:#ae1414;
+        border-radius:30px;
+        opacity:1;
+        position: fixed;
+        top:0;
+        left:50%;
+        transform: translate(-50%, -50%) scale(0.1);
+        color:#ffffff;
+        font-size:1.5em;
+        text-align:center;
+        padding:0 15px 15px;
+        border: 2px dashed #fff;
+        visibility:hidden;
+        transition:transform 0.4s, top 0.4s;
+}
+.buypopup i{
+  font-size: 100px;
+  margin-top: -30px;
+  margin-bottom: 20px;
+  filter:drop-shadow(1px 2px 4px rgb(74, 74, 74));
+ 
+}
+.buypopup .btn{
+  padding: 0.5rem;
+  margin-top: 3.5rem;
+  border: 2px dashed#fff;
+  border-radius: 20px;
+  background: #fff;
+  cursor: pointer;
+  font-size:1.2rem;
+  filter:drop-shadow(1px 2px 4px rgb(74, 74, 74));
+  transition: 0.3s ease-in-out;
+  width: 90%;
+}
+.open-buypopup{
+  top:50%;
+  visibility: visible;
+  transform: translate(-50%, -50%) scale(1);
+}
+.popup .btn:hover{
+  transform: scale(1.08);
+}
+.summarypopup{
+  width:400px;
+  background-color:#ae1414;
+  border-radius:30px;
+  opacity:1;
+  position: fixed;
+  top:0;
+  left:50%;
+  transform: translate(-50%, -50%) scale(0.1);
+  color:#ffffff;
+  font-size:1.5em;
+  text-align:center;
+  padding:0 15px 15px;
+  border: 2px dashed #fff;
+  visibility:hidden;
+  transition:transform 0.4s, top 0.4s;
+}
+.open-summarypopup{
+  top:50%;
+  visibility: visible;
+  transform: translate(-50%, -50%) scale(1);
+}
+.summarypopup .btn{
+        padding: 0.5rem;
+        margin-top: 3.5rem;
+        border: 2px dashed#fff;
+        border-radius: 20px;
+        background: #fff;
+        cursor: pointer;
+        font-size:1.2rem;
+        filter:drop-shadow(1px 2px 4px rgb(74, 74, 74));
+        transition: 0.3s ease-in-out;
+        width: 90%;
+      }
+
+
+footer {
+  background: #1c1c1c;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 16rem;
+}
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    
+  }  
+  .footer-section h3 {
+    margin-bottom: 0.5rem;
+  }
+  
+  .social-icons a {
+    margin-left: 10px;
+    margin-right: 8px;
+    justify-content: center;
+    transition: 0.3s ease-in-out;
+  }
+  .social-icons a:hover{
+    transform: scale(1.08);
+  }
+ 
+ .social-icons a i{
+   font-size: 30px;
+  }
+  .followus{
+    font-size: 1.2rem;
+  }
+.footerline{
+  margin-top: 1rem;
+}
+
+@media(max-width:426px){
+  #sidebarToggle {
+  visibility: visible;
+  }
+  .toggle{
+  margin-bottom: 3rem;
+  }
+  .summarypopup, .buypopup{
+  width:200px;
+  font-size: 1rem;
+  }
+  .followus{
+    font-size: 0.9rem;
+  }
+  #cart-items{
+    justify-self: center;
+  }
+}
+@media(max-width:770px){
+  .nav-links a{
+    font-size: 0.9rem;
+  }
+  footer{
+    font-size: 0.7rem;
+  }
+  .followus{
+    font-size: 1rem;
+  }
+   #cart-items{
+    justify-self: center;
+  }
+}
+
+
+
+
+  

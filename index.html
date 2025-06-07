@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SneakHead - Sneakers & Shoes Store</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <button id="sidebarToggle">&#9776;</button>
+
+<!-- Sidebar -->
+<div id="sidebar">
+    <a href="index.html" style="--clr:#ae1414">Home</a>
+    <a href="#featured" style="--clr:#ae1414">Featured</a>
+    <a href="#new" style="--clr:#ae1414">New Arrivals</a>
+    <a href="#bestsellers" style="--clr:#ae1414">Best Sellers</a>
+    <a href="cart.html" style="--clr:#ae1414">My Cart(<span id="cart-count"></span>)</a>
+</div>
+  <!-- Header -->
+  <header>
+    <div class="container header-container">
+      <h1 class="logo">SneakHead</h1>
+
+      
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html" style="--clr:#ae1414">Home</a></li>
+          <li><a href="#featured" style="--clr:#ae1414">Featured</a></li>
+          <li><a href="#new" style="--clr:#ae1414">New Arrivals</a></li>
+          <li><a href="#bestsellers" style="--clr:#ae1414">Best Sellers</a></li>
+          <li><a href="cart.html" style="--clr:#ae1414">My Cart<span id="cart-count"></span></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+<div class="container">  <!-- Hero Section -->
+  <section class="hero">
+    <h2 class="i1">Step Into Style</h2>
+    <p class="i2">Discover the best collection of sneakers and shoes</p>
+    <a href="#featured"><button class="button" style="--clr:#ae1414">Explore Now</button></a>
+  </section>
+
+  <!-- Featured Section -->
+  <section class="section" id="featured">
+    <h2>Featured Products</h2>
+    <div class="product-grid" id="featured-products"></div>
+  </section>
+<hr class="line">
+  <!-- New Arrivals -->
+  <section class="section" id="new">
+    <h2>New Arrivals</h2>
+    <div class="product-grid" id="new-products"></div>
+  </section>
+<hr class="line">
+   <!-- Best Sellers -->
+  <section class="section" id="bestsellers">
+    <h2>Best Sellers</h2>
+    <div class="product-grid" id="best-sellers"></div>
+  </section>
+
+<div class="popup" id="popup">
+<i class="fa-solid fa-circle-check"></i><br>
+<span class="addincart">Added to Cart Successfully !!<br></span>
+  <button class="btn" onclick="closePopup()">OK</button>
+</div>
+
+</div>
+
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+        <div class="footer-section">
+        <h3>SneakHead</h3>
+        <p>Discover the best collection of sneakers and shoes</p>
+        </div>
+        <div class="social-icons">
+          <div class="followus">Follow Us</div>
+          <div>
+          <a href="https://www.linkedin.com/in/ajit-mangsulikar-504775335/" target="_main"><i class="fa-brands fa-linkedin" style="color: #ae1414;"></i></a>
+          <a href="https://www.instagram.com/ajit_m_07/?__pwa=1" target="_main"><i class="fa-brands fa-instagram" style="color: #ae1414;;"></i></a>
+          <a href="https://github.com/AjitM07" target="_main"><i class="fa-brands fa-github" style="color: #ae1414;;"></i></a>
+          </div>
+        </div>
+        <div class="footerline">
+      <p> Made with 💖 || &copy; 2025 SneakHead </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="products.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
